@@ -7,21 +7,24 @@
 
     <body>
         <h1>Formularios 1</h1>
-        <form>
+        <form action="registrar-formulario.html"
+            method="post">
             <label>Nombre:</label>
             <input type="text"
                 maxlength="20 "
-                size="20">
+                size="20"
+                name="nombre">    
             <label>Password:</label>
             <input type="password"
                 maxlength="4"
-                size="4">
+                size="4"
+                password="password">
             <input type="submit" value="Enviar">
         
         </form>
-
         <h1>Formularios 2</h1>
-        <form>
+        <form action="registrar-formulario.html"
+            method="get">
             <ul>
                 <li>
                     <input type="checkbox" value="MUSICA">
@@ -45,9 +48,61 @@
             <input type="radio" 
                 value="B"
                 name="opciones">
-        
+            <input type="submit" value="Enviar">            
         </form>
-        <br>
+        
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        Nombre: opci&oacute;n
+                    </td>
+                    <td>
+                        <input name="nombre" 
+                            type="text">
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>
+                        Fec.Nac:
+                    </td>
+                    <td>
+                        <input name="nombre" 
+                            type="date"
+                            min="2022-08-16"
+                            max="2022-08-18">
+                    </td>                                        
+                </tr>
+                <tr>
+                    <td>
+                        Edad:
+                    </td>
+                    <td>
+                        <input name="nombre" 
+                            type="number" min="1" max="150" step="2">
+                    </td>                                        
+                </tr>
+
+            </table>
+        </form>
+
+        <ul>
+            <li>&aacute;</li>            
+            <li>&eacute;</li>            
+            <li>&iacute;</li>            
+            <li>&oacute;</li>            
+            <li>&uacute;</li>            
+        </ul>
+        <ul>
+            <li>&Aacute;</li>            
+            <li>&Eacute;</li>            
+            <li>&Iacute;</li>            
+            <li>&Oacute;</li>            
+            <li>&Uacute;</li>     
+            <li>&deg;</li>     
+        </ul>
+
+
         <a href="index.html">
             volver al index
         </a>
