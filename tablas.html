@@ -11,22 +11,26 @@
         <section>
             <h2>Tablas</h2>
             <table border="1">
-                <!--columnas-->
+                <!--encabezado de las columnas-->
                 <tr>
                     <th>Col 1</th>
                     <th>Col 2</th>
                     <th>Col 3</th>
                 </tr>
-                <!--filas-->
+                <!--celdas de las filas-->
                 <tr>
-                    <td>
-                        Col 1 fila 1
-                    </td>
-                    <td>
-                        Col 2 fila 2
-                    </td>
-                    <td>
-                        Col 3 fila 3
+                    <td>Col 1 fila 1</td>
+                    <td>Col 2 fila 1</td>
+                    <td>Col 3 fila 1</td>
+                </tr>
+                <tr>
+                    <td>Col 1 fila 2</td>
+                    <td>Col 2 fila 2</td>
+                    <td>Col 3 fila 2</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Col 1 fila 2, pero ocupa 3 columnas
                     </td>
                     
                 </tr>
@@ -38,6 +42,13 @@
         </a>
 
         <form action="index.html" method="post">
+            <button>
+                volver
+            </button>
+        </form>
+        <!--el sig methodo nos sirve para mantener parametros de un filtro-->
+        <form action="index.html" method="get">
+            <input type="hidden" name="param" value="valor">
             <button>
                 volver
             </button>
