@@ -1,7 +1,13 @@
+/*selector*/
 h2 {
     color:chocolate
 }
 /*clase*/
 .sectionPrincipal {
-    background-color: cadetblue
+    background-color:chartreuse
+}
+
+/*por ID*/
+#btn {
+    background-color: crimson;
 }

@@ -15,16 +15,25 @@
             color:green;
             font-size: 20px;
         }
+
         h1 {
             color:blueviolet;
             font-weight: bolder;
         }
 
-        /* estructura 
+        section {
+            background-color:hotpink
+        }
+
+        /* estructura */
+        /*
         selector {
             propiedad: valor
         }
         */
+
+        /*tambien podemos poner class y ID*/
+         
     </style>
 
     <!--3 forma: EXTERNO-->
@@ -33,22 +42,42 @@
 
 </head>
 <body>
-    <!--2 forma INLINE 
-        aplicando estilo en linea
-        usando el atributo style-->
-    <section style="background-color: aqua">
-    
-        <h1 style="color: rgb(156, 40, 40);">Css</h1>
-        <h2 style="color:blue">Subtitulo</h2>
-        <h1>Css</h1>
-        <h2>Subtitulo</h2>
-    </section> 
+    <main>
+        <!--2 forma INLINE 
+            aplicando estilo en linea
+            usando el atributo style-->
+        <section style="background-color: aqua">
+        
+            <h1 style="color: rgb(156, 40, 40);">Css</h1>
+            <h2 style="color:blue">Subtitulo</h2>
+            <h1>Hola</h1>
+            <h2>Chau</h2>
+        </section> 
+        
+        <!--a la sig section le incluimos una class-->
+        <section class="sectionPrincipal">
+            <p style="font-weight: bolder">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati, mollitia rem dolore eaque modi optio sint deserunt, magnam assumenda quam. Molestiae sapiente et ratione placeat quam ipsum ducimus sit.
+            </p>
+        </section>
 
-    <section class="sectionPrincipal">
-    <p style="font-weight: bolder">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati, mollitia rem dolore eaque modi optio sint deserunt, magnam assumenda quam. Molestiae sapiente et ratione placeat quam ipsum ducimus sit.
-    </p>
-    </section>
+        <section>
+            <form action="alta.html">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text" maxlength="50" required>
+                
+                <button style="background-color:red">
+                    Enviar
+                </button>
+                <button id="btn">
+                    Enviar
+                </button>
+            
+            </form>
+        </section>
+    </main>
+
+
     
 </body>
 </html>
