@@ -11,3 +11,8 @@ h2 {
 #btn {
     background-color: crimson;
 }
+
+p {
+    font-size: 50px;
+    font-family: sans-serif;
+}
