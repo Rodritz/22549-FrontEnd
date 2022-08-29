@@ -29,6 +29,6 @@ main section.html {
 /*especificidad
 1 - important
 2 - inline
-3 - id > class
+3 - id > class especifica >class
 4 - etiqueta
 */
