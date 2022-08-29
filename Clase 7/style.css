@@ -1,0 +1,34 @@
+/*selector de etiqueta*/
+p {
+    font-size: 20px;
+}
+
+/*quiero que todo tenga la misma fuente*/
+* {
+    /*font-family de google font*/
+    font-family: 'Roboto', sans-serif;
+}
+
+/*herencia*/
+.html {
+    background-color:aqua;
+}
+
+section {
+    background-color: darkseagreen !important;
+}
+
+main section.html {
+    background-color: brown ;
+}
+
+#htmlID {
+    background-color: blueviolet;
+}
+
+/*especificidad
+1 - important
+2 - inline
+3 - id > class
+4 - etiqueta
+*/
