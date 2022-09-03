@@ -7,31 +7,36 @@
     <title>Document</title>
     <style>
         /*selector hijo*/
-        p > strong {
+        p > strong{
             color: red;
         }
 
         div {
             font-size: 15px;
+            
         }
 
-        /*hermanos ady tag + tag */
+        div h2 {
+            color: #542016 ;
+        }
+
+        /*hermanos adyacentes (tag + tag) */
         h1 + p {
             font-weight: bolder;
         }
-        /* hermano general*/
+        /* hermano general (tag ~ tag)*/
         h2 ~ p {
-            height: 10px;
+            height: 15px;
             background-color: blueviolet;
         }
 
         /*pseudoclases*/
         a:visited {
-            color: brown;
+            color: brown;                      
         }
 
         a:active {
-            color: darkgreen;
+            color: darkgreen;   
         }
 
         h1:hover {
@@ -39,21 +44,21 @@
         }
 
         input:checked {
-            margin: 10px;
+            margin: 10px;           
         }
         
         div.primerHijo p {            
-            margin: 0 auto;
+            margin: 15px
         }
         div.primerHijo p {
             display: inline;            
         }
-        /*first child*/
-        div.primerHijo p.first-child {
+        /*first child // last child*/
+        div.primerHijo p:first-child {
             color: blueviolet;
             font-size: 16px;
         }
-        div.primerHijo p.last-child {
+        div.primerHijo p:last-child {
             color: blue;
             font-size: 16px;
         }
@@ -94,7 +99,7 @@
         <h2>hermanos generales</h2>
         <p>
             hermano 1 de h2
-        </p>
+        </p>        
         <p>
             hermano 2 de h2
         </p>
@@ -109,33 +114,33 @@
             <a href="http://www.google.com.ar">google</a>
         </li>
         <li>
-            <a href="http://www.google.com.ar">google</a>
+            <a href="https://www.facebook.com/">facebook</a>
         </li>
     </ul>
     <input type="checkbox">
 
     <!--first child-->
-    <div>
+    <div class="primerHijo">
         <h1>hermanos adyacentes</h1>
         <p>
-            p1
+            Juan
         </p>
         <p>
-            p2
+            Macarena
         </p>
         <p>
-            p3
+            Alegra
         </p>
 
     </div>
 
     <ol>
-        <li>primero</li>
-        <li>segundo</li>
-        <li>tercero</li>
-        <li>cuarto</li>
-        <li>quinto</li>
-        <li>sexto</li>
+        <li>primer hijo</li>
+        <li>segundo hijo</li>
+        <li>tercer hijo</li>
+        <li>cuarto hijo</li>
+        <li>quinto hijo</li>
+        <li>sexto hijo</li>
     </ol>
 
 </body>
