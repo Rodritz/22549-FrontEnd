@@ -1,0 +1,82 @@
+/*selector hijo*/
+/*Select and style every <strong> element where the parent 
+is a <p> element*/
+p > strong{
+    color: red;
+}
+
+div {
+    font-size: 15px;            
+}
+
+/*especificamos el hijo de que padre lleva el atributo*/
+div h2 {
+    color: #542016 ;
+}
+
+/*hermanos adyacentes (tag + tag) */
+h1 + p {
+    font-weight: bolder;
+}
+
+/* hermano general (tag ~ tag)*/
+/*Set a background color for all <p> elements that are 
+preceded by a <h2> element with the same parent*/
+h2 ~ p {
+    height: 15px;
+    background-color: blueviolet;
+}
+
+/*pseudoclases*/
+a:visited {
+    color: brown;                      
+}
+
+a:active {
+    color: darkgreen;   
+}
+
+h1:hover {
+    font-family: verdana;
+}
+
+input:checked {
+    margin: 10px;           
+}
+        
+div.primerHijo p {            
+    margin: 15px
+}
+
+div.primerHijo p {
+    display: inline;
+}
+
+/*first child / last child*/
+/*Select and style every <p> element that is the first/last 
+child of its parent*/
+div.primerHijo p:first-child {
+    color: crimson;
+    
+}
+
+div.primerHijo p:last-child {
+    color: blue;
+    font-size: 16px;
+}
+
+/*nth*/
+/*dentro del parentesis podemos poner la posicionde la lista, 
+odd, even, alguna posicion o alguna otra formula, en este caso cada 2 a partir
+del quinto*/
+ol li:nth-child(2n+5) {
+    color: blue !important;
+}
+ol li:nth-child(2) {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+ol li:nth-child(odd) {
+    color: red;
+}
