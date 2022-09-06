@@ -1,0 +1,67 @@
+/*saco los margenes*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section  {
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+}
+
+.context-text {
+    padding: 5px;
+    margin: 10px;
+}
+
+section img {
+    width: 40%;
+}
+
+/*scrolling*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*aplico los colores: gradient*/
+section:first-child{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+section:nth-child(2){
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+section:last-child{
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+
+
+/*cambio a para ser como un boton*/
+section a {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    background-color: teal;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 25px;
+}
+
+section a:hover {
+    font-weight: bolder;
+}
+section a:active {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        flex-direction: column;
+    }
+}
