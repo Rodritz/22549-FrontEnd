@@ -10,7 +10,7 @@ section  {
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
-    align-items: center;
+    align-items: center;    
 }
 
 .context-text {
