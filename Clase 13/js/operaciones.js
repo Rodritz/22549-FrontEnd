@@ -14,6 +14,7 @@ let op2= prompt ('ingrese el valor de op2');
 let res; //declaro la variable
 res= (+op1)+ parseInt(op2);
 
-//console.log (res);//muestro el resultado por consola
 
-alert('resultado=' +res); //muestra alerta
+console.log (res);//muestro el resultado por consola
+
+//alert('resultado=' +res); //muestra alerta
