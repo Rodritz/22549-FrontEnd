@@ -1,5 +1,6 @@
 .navbar {
     padding: 5px 0px 10px 70px;
+    position: static;
 }
 #comprarTickets {
     color: green;
@@ -11,7 +12,11 @@
 
 .container2 {
     display: flex;
-    justify-content: center;
-    align-items: left;
-    background-image: url("./imagenes/ba1.jpg");
+    flex-direction: column;
+    
+    background-image: url(imagenes/ba1.jpg);
+}
+
+.conf {
+
 }
