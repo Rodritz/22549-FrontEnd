@@ -1,6 +1,8 @@
 .navbar {
     padding: 5px 0px 10px 70px;
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    justify-content: space-evenly;
 }
 #comprarTickets {
     color: green;
@@ -16,10 +18,16 @@
     display: flex;
     flex-direction: column;    
     background-image: url(imagenes/ba1.jpg);
-    color: white;     
+    color: white;
+    justify-content: center;  
+    align-items: flex-end ;   
 }
 
 .btn {
     color: white;
+}
+
+.container_texto {
+    width: 600px;
 }
 
