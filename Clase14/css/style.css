@@ -1,0 +1,18 @@
+.calculadora-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculadora-container div.calculadora-container__numeros > div  {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    background-color: aqua;
+}
+
+.calculadora-container div.calculadora-container__numeros > div  {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    background-color: aqua;
+}
