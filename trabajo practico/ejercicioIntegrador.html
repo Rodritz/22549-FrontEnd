@@ -9,33 +9,30 @@
     <title>Trabajo practico integrador</title>
 </head>
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+      <div class="container-fluid" >
+        <img src="imagenes/codoacodo.png" alt="codo a codo" id="codo"/>
+        <a class="navbar-brand" href="#">Conf Bs As</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+            <a class="nav-link" href="#oradores">Los oradores</a>
+            <a class="nav-link" href="#confBsAs">El lugar y la fecha</a>
+            <a class="nav-link" href="#conviertete">Conviértete en orador</a>
+            <a class="nav-link" href="#" id="comprarTickets">Comprar tickets</a>
+            <!--<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
     <main>
       <section>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
-          <div class="container-fluid" >
-            <img src="imagenes/codoacodo.png" alt="codo a codo" id="codo"/>
-            <a class="navbar-brand" href="#">Conf Bs As</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
-                <a class="nav-link" href="#">Los oradores</a>
-                <a class="nav-link" href="#">El lugar y la fecha</a>
-                <a class="nav-link" href="#">Conviértete en orador</a>
-                <a class="nav-link" href="#" id="comprarTickets">Comprar tickets</a>
-                <!--<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
-              </div>
-            </div>
-          </div>
-        </nav>
-      </section>
-      <section class="row">
         <div class="contenedor-flex">
-          <!--<div class="img principal">
-            <img src="imagenes/ba1.jpg" width="100%"/>
-          </div>-->
           <div class="conf2">
             <h2>Conf Bs As</h2>
             <p class="container_texto">Bs As llega por primera vez a Argentina. Un evento para compartir con
@@ -56,8 +53,8 @@
           <h1>ORADORES</h1>
         </div>
       </section>
-      <section class="row">
-        <div class="contenedor-tarjetas">          
+      <section class="tarjetas">
+        <div class="contenedor-tarjetas" id="oradores">          
           <div class="card" style="width: 18rem;">            
             <img src="imagenes/steve.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -107,7 +104,7 @@
           <div class="col-6 img">
             <img src="imagenes/honolulu.jpg" alt="honolulu" width="100%"/>
           </div>          
-          <div class="col-6 confBsAs">
+          <div class="col-6 confBsAs" id="confBsAs">
             <h2>Bs As - Octubre</h2>
             <p class="texto">Buenos Aires es la provincia y localidad mas grande del estado de 
               Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre
@@ -121,6 +118,23 @@
           
         </div>
         
+      </section>
+      <section>
+        <div class="oradores">
+          <h6>CONVIERTETE EN UN</h6>
+          <h1>ORADORES</h1>
+          <h6>Anótate como orador para dar una charla ignite. Cuéntanos de que quieres hablar!</h6>
+        </div>
+      </section>
+      <section>
+        <form action="registrar-formulario.html"
+            method="post">
+            <label for="nombre">Nombre:</label>
+            <input name="nombre" id="nombre" required 
+                type="text"
+                maxlength="20 "
+                size="20"              
+                name="nombre">
       </section>
     </main>
 

@@ -1,45 +1,53 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*navbar*/
 .navbar {
     padding: 5px 0px 20px 70px;
     position: fixed;
     width: 100%;
-}    
-    
-#comprarTickets {
-    color: green;
-}
+}   
 
 #codo {
     width: 7%;
 }
-
+    
+/*primer contenedor - la conferencia*/
+#comprarTickets {
+    color: green;
+}
 .conf2 {
     width:100%; 
 	height: 800px;
     display: flex;
     flex-direction: column;    
     background-image: url(imagenes/ba1.jpg);
+    background-size: 100% 100%;
+    background-color: #2D2C2B;
+    background-blend-mode: soft-light;
     color: white;
     justify-content: center;  
     align-items: flex-end ;   
-    
+        
 }
 
+#tickets {
+    background-color: rgb(25,135,84);
+    border-radius: 2px;
+}
 .btn {
     color: white;
-    
-    
-    
+    border: 1px solid white;
 }
 
 .container_texto {
     width: 35%;
-    margin-right: 100px;
-    
+    margin-right: 100px;    
 }
 
 h2 {
-    margin-right: 100px;
-     
+    margin-right: 100px;     
 }
 
 #span {
@@ -48,10 +56,15 @@ h2 {
 
 /*tarjetas*/
 
+.tarjetas {
+    margin: 0px 200px;
+}
+
 .contenedor-tarjetas {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 25px;
 }
 
 .oradores {
@@ -108,16 +121,34 @@ a.btn.btn-warning {
 .contenedor-flex {
     display: flex;
     flex-direction: row;
+    
 }
 
 .confBsAs {
-    background-color: rgba(12, 11, 11, 0.514);
-    
-    color: white;
-    
-    
+    background-color: #2D2C2B;
+    color: white;       
 }
 
+p.texto {
+    padding-left: 20px;
+}
 
+.confBsAs h2 {
+    padding: 15px 0px 0px 20px;
+}
+
+.confBsAs button {
+    margin-left: 18px;
+    border: 1px solid white;
+}
+
+/****/
+.ultimo {
+    float: left;
+    
+
+
+
+}
 
 
