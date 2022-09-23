@@ -1,26 +1,33 @@
-html { 
-    margin: 0%;   
+body { 
+    margin: 0;   
     scroll-behavior: smooth;
 }
 
 /*navbar*/
 .navbar {
-    padding: 5px 0px 20px 70px;
+    padding: 15px 0px 20px 70px;
     position: fixed;
+    color: rgb(52,57,63);
     width: 100%;
     z-index: 10;
 }   
+
+.navbar-nav {
+    padding-left: 350px;
+    
+}
 
 #codo {
     width: 7%;
 }
     
 /*primer contenedor */
+
 #comprarTickets {
     color: green;
 }
 .conf2 {
-    width:100%; 
+    width: 100%; 
 	height: 800px;
     display: flex;
     flex-direction: column;    
@@ -43,9 +50,15 @@ html {
     border: 1px solid white;
 }
 
+button .btn .btn-succes {
+    background-color: green;
+}
+
+
+
 .container_texto {
     width: 35%;
-    margin-right: 100px;    
+    margin-right: 100px;
 }
 
 h2 {
@@ -123,6 +136,8 @@ a.btn.btn-warning {
     color: black;
 }
 
+
+
 /*tercer contenedor*/
 
 .contenedor-flex {
@@ -167,20 +182,23 @@ form {
 
 .oradores h6 {
     margin-top: 25px;
+    opacity: 0.9;
 }
 .oradores span {
     margin-bottom: 15px;
     margin-top: 0px;
+    opacity: 0.9;
 }
 
-#span {
-    font-size: 12px;
-    padding-right: 280px;
+#span1 {
+    font-size: 12px; 
+    padding-right: 380px;  
+    opacity: 0.6;    
 }    
     
 
 .btn-enviar {
-    background-color: rgb(96, 236, 96);
+    background-color: rgb(150,201,62);
     color: white;
     width: 590px;
     border: none;
@@ -194,21 +212,36 @@ span input {
     height: 30px; 
 }
 
+#span2 {
+    border-bottom: 1px dotted;
+
+}
+
+
 textarea {
     padding: 5px 0px 0px 20px;
+    resize: none;
+    border-color: linen;
 }
 
 /*footer*/
 
 .contenedor-footer {
     display: flex;
-    list-style: none;
     color: white;
     width: 100%;
     height: 80px;
     align-items: center;    
     display: inline-flex;
     justify-content: space-evenly;
-    background-color: rgb(9, 52, 117);
+    background-color: rgb(28,81,112);
     position: absolute;
+
 }
+
+.contenedor-footer a {
+    text-decoration: none;
+    color: white;
+    width: min-content;
+}
+
