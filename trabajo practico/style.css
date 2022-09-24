@@ -214,14 +214,12 @@ span input {
 
 #span2 {
     border-bottom: 1px dotted;
-
 }
-
 
 textarea {
     padding: 5px 0px 0px 20px;
     resize: none;
-    border-color: linen;
+    border-color: linen;    
 }
 
 /*footer*/
@@ -236,7 +234,6 @@ textarea {
     justify-content: space-evenly;
     background-color: rgb(28,81,112);
     position: absolute;
-
 }
 
 .contenedor-footer a {
