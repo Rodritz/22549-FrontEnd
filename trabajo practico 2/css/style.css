@@ -5,9 +5,8 @@ body {
 .tarjetas {
     display: flex;
     height: 380px;
-    
-    
-}
+    flex-wrap: nowrap;        
+}    
 
 img.card-img-top {
     width: 100%;
@@ -21,6 +20,7 @@ h6 {
     opacity: 0.6;
 }
 
+
 .inputs {
     display: flex;
     flex-direction: column;
@@ -32,11 +32,10 @@ label {
     margin: 5px 0px;
 }
 
-input {
+.inputs input {
     width: 99%;
     opacity: 0.2;
-    border-radius: 5px;
-    
+    border-radius: 5px;    
 }
 
 span {
@@ -67,7 +66,8 @@ button {
     border-radius: 3px;
     border: none;
     font-size: 13px;
-    padding: 5px 9px
+    padding: 5px 15px;
+    
 }
 
 @media screen and (max-width: 768px) {
