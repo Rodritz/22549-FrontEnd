@@ -10,7 +10,7 @@ section  {
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
-    align-items: center;    
+    align-items: center;       
 }
 
 .context-text {
@@ -67,6 +67,8 @@ section a:active {
 }
 
 /*encabezado con imagen*/
+
+
 .menu-container {
     background-color: beige;
     display: flex;
@@ -106,8 +108,8 @@ section a:active {
     align-items: center;
 }
 header img {
-    width: 200%;
-    height: auto;
+    width: 100%;
+    
 }
 
 header nav{
