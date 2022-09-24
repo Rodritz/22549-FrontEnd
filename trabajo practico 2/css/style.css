@@ -5,7 +5,7 @@ body {
 .tarjetas {
     display: flex;
     height: 380px;
-    flex-wrap: wrap;
+    
     
 }
 
@@ -68,4 +68,10 @@ button {
     border: none;
     font-size: 13px;
     padding: 5px 9px
+}
+
+@media screen and (max-width: 768px) {
+    .tarjetas {
+        flex-direction: column;
+    }
 }
