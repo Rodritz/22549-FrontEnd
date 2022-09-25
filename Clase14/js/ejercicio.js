@@ -14,7 +14,7 @@ function Calcular() {//inicio
 
     //leer op1
     //prompt('Ingrese op1');
-    //javascrip t tiene una funcion: document.getElementById('id').value;
+    //javascrip tiene una funcion: document.getElementById('id').value;
     op1 = document.getElementById('op1').value;
     operacion = document.getElementById('operacion').value;
     op2 = document.getElementById('op2').value;
@@ -22,26 +22,29 @@ function Calcular() {//inicio
     console.log('op1 vale: ', op1);
     console.log('operacion vale: ',operacion);
     console.log('op2 vale: ',op2);
-    //rojo
+
+    //codicional de suma
     if(operacion === '+') {
         resultado = parseInt(op1) + parseInt(op2); //STRING > NUMBER?
     }
 
-    //verde
+    //condicional de resta
     if(operacion === '-') {//comparando
         resultado = parseInt(op1) - parseInt(op2);
     }
-
-    //violeta
-    if(operacion === '/') {
-      //azul
-    if(parseInt(op2) !== 0) {
-        resultado = parseInt(op1) / parseInt(op2);
-        } else {
+ 
+    //condicional de division
+    if(operacion === '/') { 
+        if(parseInt(op2) !== 0) {
+            resultado = parseInt(op1) / parseInt(op2);
+            } else {
+            //document.getElementById ('resultado').innerHTML = 'no se puede dividir por cero'; 
+            //es lo mismo que decir
             resultado = 'no se puede dividir por cero';
-        } 
+            } 
     }
 
+    //condicional de multiplicacion
     if(operacion === '*') {//comparando
         resultado = parseInt(op1) * parseInt(op2);
     }
@@ -49,10 +52,12 @@ function Calcular() {//inicio
     console.log(resultado);
 
     //actualizar el label del html con el resultado de la operacion
+    
     document.getElementById ('resultado').innerHTML = resultado;
 
 
 }//fin
+
 
 function borrar(){
     document.getElementById('op1').value='';
@@ -61,3 +66,5 @@ function borrar(){
     document.getElementById('resultado').innerHTML='';
 
 }
+
+

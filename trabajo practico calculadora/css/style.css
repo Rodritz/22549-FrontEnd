@@ -1,0 +1,12 @@
+.calculadora-container {
+    display: flex;
+    justify-content:flex-start;
+    gap: 50px;
+}
+
+div button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: blueviolet;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clase14</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <main>
+        <!--<section>
+            <h1>Calculadora</h1>            
+            --operador 1--
+            <label for="op1"></label>
+            <input id="op1" type="number">
+
+            --operacion matematica--
+            <label for="operacion"></label>
+            <input id="operacion" type="text" width="15px">
+
+            --operador 2--
+            <label for="op2"></label>
+            <input id="op2" type="number">
+
+            --resultado--
+            <label>=</label>
+            <label id="resultado"></label>
+            <br>
+            --realiza calculo--
+            <button onclick="Calcular();">
+                Calcular
+            </button>
+            --limpiar--
+            <button onclick="borrar();">
+                Borrar
+            </button>
+        </section>-->
+        <hr>
+        <section>
+            <div class="calculadora-container">
+                <div class="calculadora-container_numeros">
+                    <div >
+                        <button onclick="guardar(0)">0</button>                    
+                    </div>
+                    <div >
+                        <button onclick="guardar(1)">1</button>                    
+                    </div>
+                    <div >
+                        <button onclick="guardar(2)">2</button>                    
+                    </div>
+                    <div >
+                        <button onclick="guardar(3)">3</button>                    
+                    </div>
+                    <div >
+                        <button onclick="guardar(4)">4</button>                    
+                    </div>
+                    <div >
+                        <button onclick="guardar(5)">5</button>                    
+                    </div>
+                    <div >
+                        <button onclick="guardar(6)">6</button>                    
+                    </div>
+                    <div >
+                        <button onclick="guardar(7)">7</button>                    
+                    </div>
+                    <div >
+                        <button onclick="guardar(8)">8</button>                    
+                    </div>
+                    <div >
+                        <button onclick="guardar(9)">9</button>                    
+                    </div>                    
+                </div>
+                <div class="calculadora-container_operaciones">
+                    <div >
+                        <button onclick="guardar(/)">/</button>                    
+                    </div>
+                    <div >
+                        <button onclick="guardar(*)">*</button>                    
+                    </div>
+                    <div >
+                        <button onclick="guardar(+)">+</button>                    
+                    </div>
+                    <div >
+                        <button onclick="guardar(-)">-</button>                    
+                    </div>                          
+                    <div >
+                        <button onclick="Calcular();">Calcular</button>                    
+                    </div>
+                    <div >
+                        <button onclick="borrar();">Borrar</button>                    
+                    </div> 
+                    <hr>
+                    <div >
+                        <label>=</label>
+                    <label id="resultado"></label>                    
+                    </div>             
+                </div>            
+            </div>
+        </section>
+    </main>
+</body>
+<script src="js/calculadora.js"></script>
+</html>
