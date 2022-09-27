@@ -1,5 +1,5 @@
 .calculadora-container {
-    display: flex;
+    display: flex;    
     justify-content:flex-start;
     gap: 50px;
 }

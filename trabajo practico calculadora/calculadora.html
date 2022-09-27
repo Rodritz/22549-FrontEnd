@@ -39,27 +39,8 @@
         </section>-->
         <hr>
         <section>
-            <div class="calculadora-container">
-                
-                    <table class="calculadoraTable-container">
-                        <tr>
-                        <label for="resultado">resultado</label>
-                        <!--<input type="number" name="resultado" id="resultado">-->
-                        </tr>
-                        <tr>
-                            <th>
-                                <button onclick="guardar(+)">+</button>
-                            </th>
-                            <th>
-                                <button onclick="guardar(-)">-</button>
-                            </th>
-                            <th>
-                                <button onclick="guardar(*)">*</button>
-                            </th>
-                            <th>
-                                <button onclick="guardar(/)">/</button>
-                            </th>
-                        </tr>
+            <div class="calculadora-container">                
+                    <table class="calculadoraTable-container">                  
                         <tr>
                             <td>
                                 <button onclick="guardar(7)">7</button>
@@ -69,7 +50,10 @@
                             </td>
                             <td>
                                 <button onclick="guardar(9)">9</button>
-                            </td>                            
+                            </td>  
+                            <td>
+                                <button onclick="guardar(+)">+</button>
+                            </td>                          
                         </tr>
                         <tr>
                             <td>
@@ -80,7 +64,10 @@
                             </td>
                             <td>
                                 <button onclick="guardar(6)">6</button>
-                            </td>                            
+                            </td>   
+                            <td>
+                                <button onclick="guardar(-)">-</button>
+                            </td>                         
                         </tr>
                         <tr>
                             <td>
@@ -91,7 +78,10 @@
                             </td>
                             <td>
                                 <button onclick="guardar(3)">3</button>
-                            </td>                            
+                            </td>    
+                            <td>
+                                <button onclick="guardar(*)">*</button>
+                            </td>                        
                         </tr>
                         <tr>
                             <td>
@@ -102,11 +92,15 @@
                             </td>
                             <td>
                                 <button onclick="Calcular('calcular');">Calcular</button> 
-                            </td>                            
+                            </td>    
+                            <td>
+                                <button onclick="guardar(/)">/</button>
+                            </td>                        
                         </tr>
                     </table>
+                    <input type="number" name="resultado" id="resultado">
                 
-                <div class="calculadora-container_numeros">
+                <!--<div class="calculadora-container_numeros">
                     <div >
                         <button onclick="guardar(0)">0</button>                    
                     </div>
@@ -162,7 +156,7 @@
                         <label>=</label>
                     <label id="resultado"></label>                    
                     </div>             
-                </div>            
+                </div>-->  
             </div>
         </section>
     </main>

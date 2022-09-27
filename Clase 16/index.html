@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <label for="nota1">Nota1</label>
+        <input id="nota1" type="number" min="0" max="10">
+        <label for="nota2">Nota2</label>
+        <input id="nota2" type="number" min="0" max="10">
+        <button onclick="calcularNotas()">
+            Calcular Notas
+        </button>
+        <!--limpiar-->
+        <button onclick="borrar();">
+            Borrar
+        </button>
+    </section>
+    <section>
+        <h2>Resultados</h2>
+        Menor:  <label id="menor"></label>
+        <br>
+        Mayor: <label id="mayor"></label>
+        <br>
+        Promedio: <label id="promedio"></label>
+    </section>
+    
+    <script src="js/javascript.js"></script>
+</body>
+</html>
