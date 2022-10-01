@@ -43,7 +43,7 @@ function calcularValores(nota1,nota2) {
     let menor = notas[0]; //utilizo la primera posicion del vector
     let mayor = notas[0]; //utilizo la primera posicion del vector
     let promedio;
-    let suma = 0; 
+    let suma = 0; //creo la variable que funciona como acumulador
     for(let i=0;i<notas.length;i++) {
         //calculo el menor 
         if(notas[i] < menor)  { //la traduccion de esto es "si notas en la posicion
@@ -90,5 +90,10 @@ function borrar() {
     document.getElementById('menor').innerHTML='';
     document.getElementById('mayor').innerHTML='';
     document.getElementById('promedio').innerHTML='';
-
 }
+
+/*
+mayor
+menor
+promedio
+validacion
