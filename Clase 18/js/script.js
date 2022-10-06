@@ -23,10 +23,8 @@ function add() {
 
 function renderKeyByDOM() {
     const list = findKeys();
+
     //crear un <ul>
-    
-    //const ul = validateUl(); esta funcion no funca
-    
     const ul = document.createElement('ul');
     ul.id = 'clavesUl';
     ul.className = 'classUl';
@@ -47,13 +45,6 @@ function renderKeyByDOM() {
         ul.appendChild(li);
     };
 }
-
-//esta funcion no funca
-/*function validateUl() {
-    if(ul === '') {
-        ul = document.createElement('ul');
-    };
-}*/
 
 //---------------
 
