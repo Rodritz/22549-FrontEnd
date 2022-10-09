@@ -10,7 +10,7 @@ function add() {
 
     /*podemos decir
     const clave = document.getElementById('clave').value;
-    o utilizar una funcion*/
+    o utilizar una funcion, como hacemos a continuacion*/
     const clave = getKey();
 
     //invocamos la funcion booleana para validacion
@@ -26,33 +26,40 @@ function add() {
     //agregar a la lista de claves
     addToList(clave);
 
-    // renderKeys();
+    // invocamos la funcion render... que va a utilizar DOM
     renderKeyByDOM();
 }
 
 function renderKeyByDOM() {
+    /*crea una const list que 
+    invoca la funcion que le agrega las claves*/
     const list = findKeys();
-    //crear un <ul>
-    
-    const ul = document.createElement('ul');
-    ul.id = 'clavesUl';
-    ul.className = 'classUl';
 
-    //agregar al div el hijo: ul
+    //crear un <ul>
+    const ul = document.createElement('ul');
+    list.innerHTML = ''; //limpia lo ingresado previamente para que no se repita
+    ul.id = 'clavesUl'; //ya le puedo crear un id al crear el ul
+    ul.className = 'classUl'; //le puedo tambien crear una class
+
+    //agrego al div 'list' el hijo <ul>
     list.appendChild(ul);
 
 
-    //crear los <li> en base a el array de clave y los agrego
-    //al <ul>
-    for(let clave of claves) {
-        const li = document.createElement('li');
-        li.innerHTML = clave;
-        li.id = Math.random();//0 - 0.999999
+    /*crear los <li> en base a el array de clave y los agrego
+    al <ul>*/
+    for(let clave of claves) { //recorro el array
+        const li = document.createElement('li'); //creo el <li> dinamicamente       
+        li.innerHTML = clave; //para que el <li> tenga texto le pongo 
+                              //el inner.. para que traiga lo del label que es la 'clave'
+        li.id = Math.random();//le creo un id dinamico entre 0 - 0.999999
 
-        //al li le agrega un evento
-        li.addEventListener('click', () => alert('soy un li'))
-
+        //agrego al ul el hijo <li>
         ul.appendChild(li);
+
+        /*se puede agregar eventos a cualquier elemento
+        en este caso lo hacemos con el li para que salte un alerta..
+        podemos hacer que mediante el evento ofrezca eliminar el item tambien*/
+        li.addEventListener('click', () => alert('soy un li'))
     };
 }
 //funcion para obtener la clave ingresada
@@ -64,6 +71,7 @@ function getKey() {
 function validateKey(clave) {
     return clave !== '';//true | false
 }
+
 //agregar a la lista de claves
 function addToList(clave) {
     claves.push(clave);
