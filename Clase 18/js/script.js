@@ -85,23 +85,15 @@ function clearList (){
     while(claves.length> 0){
         claves.pop();
     }
-
     //claves.slice(0,claves.length); //esta es otra opcion
 }
 
-console.log(number(''));
-
-const btnLimpiar = document.getElementById('limpiar');
-btnLimpiar.addEventListen('lick', limpiar);
-
-function clearList (){
-    while(claves.length> 0){
-        claves.pop();
-    }
-}
+//funcion completa para limpiar lista
+//capturo el boton de limpiar
+const boton = document.getElementById('limpiar');
+boton.addEventListener('click',limpiar);
 
 function limpiar() {
-
     //vaciar la lista
     clearList();
 
@@ -109,4 +101,8 @@ function limpiar() {
     document.getElementById('claves').innerHTML = '';
 }
 
-//capturo el boton de limpiar
+function clearList (){
+    while(claves.length> 0){
+        claves.pop();
+    }
+}
