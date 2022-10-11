@@ -1,5 +1,7 @@
-const btnBuscar = document.getElementById('btnBuscar');
-btnBuscar.addEventListener('click', buscarDatos);
+/*const btnBuscar = document.getElementById('btnBuscar');
+btnBuscar.addEventListener('click', dibujarDatosPersona);*/
+
+document.getElementById('btnBuscar').addEventListener('click',dibujarDatosPersona);
 
 function buscarDatos() {
     //simulo que busque en un api rest!!!
@@ -52,7 +54,7 @@ function render(props) {
 }
 
 function DatosPersona(dni, nombre) {
-    const html = '<p>${nombre} - ${dni}</p>';
+    const html = `<p>${nombre} - ${dni}</p>`;
     return html;
 }
 /*
@@ -63,7 +65,7 @@ function DatosPersona(dni, nombre) {
 */
 function DireccionesPersona(direcciones) {    
     let html = '<ul>';//alt+96
-    const dirs = direcciones.map(d => '<li>${d.calle},${d.altura},${d.tipo}</li>');
+    const dirs = direcciones.map(d => `<li>${d.calle},${d.altura},${d.tipo}</li>`);
     html += dirs.join(''); //join sirve para unir los string
     //for!
     //forEarch
@@ -73,11 +75,9 @@ function DireccionesPersona(direcciones) {
 }
 
 function DatosCuentaPersona(cuenta) {
-    const html = '<p>Tipo: ${cuenta.tipo}</p>';
-        '<p>Nro: ${cuenta.nro}</p>';
+    const html = `<p>Tipo: ${cuenta.tipo}</p>
+        <p>Nro: ${cuenta.nro}</p>`;
     return html;
 }
-
-
 
 
