@@ -39,7 +39,7 @@ function renderKeyByDOM() {
     const ul = document.createElement('ul');
     list.innerHTML = ''; //limpia lo ingresado previamente para que no se repita
     ul.id = 'clavesUl'; //ya le puedo crear un id al crear el ul
-    ul.className = 'classUl'; //le puedo tambien crear una class
+    ul.className = 'classUl'; //le puedo tambien crear una class*/
 
     //agrego al div 'list' el hijo <ul>
     list.appendChild(ul);
@@ -80,3 +80,33 @@ function addToList(clave) {
 function findKeys() {
     return document.getElementById('claves');
 }
+
+function clearList (){
+    while(claves.length> 0){
+        claves.pop();
+    }
+
+    //claves.slice(0,claves.length); //esta es otra opcion
+}
+
+console.log(number(''));
+
+const btnLimpiar = document.getElementById('limpiar');
+btnLimpiar.addEventListen('lick', limpiar);
+
+function clearList (){
+    while(claves.length> 0){
+        claves.pop();
+    }
+}
+
+function limpiar() {
+
+    //vaciar la lista
+    clearList();
+
+    //capturar ul y limpiar la lista
+    document.getElementById('claves').innerHTML = '';
+}
+
+//capturo el boton de limpiar
