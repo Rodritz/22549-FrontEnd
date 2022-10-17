@@ -1,3 +1,5 @@
+//simulo ser otro componente
+//la funcion Users me va a dibujar la tabla con los datos de USERS_DATA
 function Users(userData) {//array de informacion con el cual voy a construir la tabla
     
     console.log(userData);
@@ -26,6 +28,8 @@ function Users(userData) {//array de informacion con el cual voy a construir la 
     );
 }
 
+/*esta funcion va a dibujar un tr por cada array de elementos que contenga
+USERS_DATA, volcando cada parametro solicitado*/
 function UserDataRow(user) {
     const html = `
         <tr>
