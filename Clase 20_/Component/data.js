@@ -1,4 +1,4 @@
-const users = {
+const USERS_DATA = {
     "page": 2,
     "per_page": 6,
     "total": 12,
@@ -52,3 +52,4 @@ const users = {
         "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
     }
 };
+

@@ -1,18 +1,26 @@
 //invoco la funcion inicial
 render();
 
-//funcion inicial que dispara las demas funciones
+//disparar a las demas funciones
 function render() {
-    console.log ('render()');
+    console.log('render()');
 
-    //usar al componente navbar
-    const htmlNavbar = Navbar('Mi primer seudo componente',buscar);/*le puedo agrego un parametro a la funcion Navbar y
-                                                                    tambien una function, en este caso la funcion buscar*/
+    //usar al componente Navbar
+    const htmlNavbar = Navbar('Mi primer pseudocomponente',buscar);
     document.getElementById('navbar').innerHTML = htmlNavbar;
+
+    //ahora invoco a 
+    const htmlUsers = Users(USERS_DATA.data);
+    document.getElementById('users').innerHTML = htmlUsers;
 }
 
-//agrego la funcion buscar
 function buscar(clave) {
-    alert(`buscando algo en index.js: ${clave}`);
-}
+    // alert(`buscando algo en index.js: ${clave}`);
 
+    //data.js > USER_DATA.data
+    //funciones flecha / arrow function
+    const usersFiltered = USERS_DATA.data.filter(user => user.first_name.includes(clave) || user.last_name.includes(clave));
+
+    const htmlUsers = Users(usersFiltered);
+    document.getElementById('users').innerHTML = htmlUsers;
+}
