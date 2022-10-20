@@ -23,8 +23,6 @@ function buscar(clave) {
     const htmlUsers = Users(usersFiltered);
     renderComponent('users', htmlUsers);
 }
-
-
 function search(page) {
     //ahora invoco a 
     
@@ -42,6 +40,7 @@ function search(page) {
         }
     );
 }
+
 /*creamos una funcion para evitar repetir el codigo 
 "documenteGet....", que va a tener dos parametros, 
 el primero (id) hara referencia al id que queremos linkear, y  
