@@ -1,6 +1,17 @@
 //invoco la funcion inicial
 render();
 
+//la funcion render dispara las demas funciones
+function render() {
+    console.log('render()');
+
+    //usar al componente Navbar
+    const htmlNavbar = Navbar('Mi primer pseudocomponente',buscar);
+    renderComponent('navbar',htmlNavbar);
+
+    search(1);
+}    
+
 function buscar(clave) {
     // alert(`buscando algo en index.js: ${clave}`);
 
@@ -10,22 +21,15 @@ function buscar(clave) {
     .filter(user => user.first_name.toLowerCase().includes(clave.toLowerCase()) || user.last_name.toLowerCase().includes(clave.toLowerCase()));
 
     const htmlUsers = Users(usersFiltered);
-    document.getElementById('users').innerHTML = htmlUsers;
+    renderComponent('users', htmlUsers);
 }
 
-//disparar a las demas funciones
-function render() {
-    console.log('render()');
 
-    //usar al componente Navbar
-    const htmlNavbar = Navbar('Mi primer pseudocomponente',buscar);
-    renderComponent('navbar',htmlNavbar);
- 
-    search('https://reqres.in/api/users');
-}
-
-function search(url) {
+function search(page) {
     //ahora invoco a 
+    
+    //debugger;
+    const url = ` https://reqres.in/api/users${page >=1 ? `?page=${page}` : ''}`;
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -38,7 +42,10 @@ function search(url) {
         }
     );
 }
-
+/*creamos una funcion para evitar repetir el codigo 
+"documenteGet....", que va a tener dos parametros, 
+el primero (id) hara referencia al id que queremos linkear, y  
+el segundo (htmlcomponent) hara referencia a la variable */ 
 function renderComponent(id, htmlComponent) {
     document.getElementById(id).innerHTML = htmlComponent;
 }
