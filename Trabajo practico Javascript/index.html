@@ -58,42 +58,56 @@
         </div>
       </section>      
       <section>
-        <div class="contenedor-venta">    
-            <form>
-              <h6>VENTA</h6>
-              <h2>VALOR DE TICKET $200</h2>
-              <span>
-                <label for="nombre"></label>  
-                <input name="nombre" id="nombre" required 
-                  type="text"                              
-                  placeholder="Nombre">
-                <label for="apellido"></label>
-                <input name="apellido" 
-                  id="apellido" required 
-                  type="text"                              
-                  placeholder="Apellido">
-                </span>
-              <textarea name="textarea" 
-              id="" 
-              cols="75" rows="3"
-              placeholder="Sobre que quieres hablar?"></textarea>  
-              <span id="span1">Recuerda incluir un titulo para tu charla</span>
-              <button class="btn-enviar">Enviar</button>
-            </form>          
-        </div>
+        <form class="contenedor-venta">
+          <h6>VENTA</h6>
+          <h2>VALOR DE TICKET $200</h2>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
+            </div>
+          </div>
+          <input type="email"
+            class="form-control"  
+            placeholder="Correo"
+            required>
+          <div class="row">
+            <div class="col">
+              <label for="cantidad" class="form-label">Cantidad</label>
+              <input type="number" class="form-control" placeholder="cantidad"
+              required>
+            </div>
+            <div class="col">
+              <label for="categoria" class="form-label">Categoría</label>
+              <select name="" id="" class="form-control" required>
+                <option value="" selected="Estudiante">Estudiante</option>
+                <option value="Estudiante">Estudiante</option>
+                <option value="Estudiante">Trainee</option>
+                <option value="Estudiante">Junior</option>
+              </select>
+            </div>
+          </div>
+          
+          <input type="text" class="form-control">    
+          <div class="row-btn">            
+              <button class="btn-enviar">Borrar</button>
+              <button class="btn-enviar">Resumen</button>            
+          </div>      
+          
+        </form>              
       </section>
     </main>
     <footer>      
-        <div class="contenedor-footer">
-          
+        <div class="contenedor-footer">          
             <a href="">Preguntas frecuentes</a>
             <a href="">Contáctanos</a>
             <a href="">Prensa</a>
             <a href="">Conferencia</a>
             <a href="">Términos y condiciones</a>
             <a href="">Privacidad</a>
-            <a href="">Estudiantes</a>
-          
+            <a href="">Estudiantes</a>          
         </div>      
     </footer>
 </body>
