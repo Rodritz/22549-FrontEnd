@@ -1,6 +1,7 @@
 body { 
     margin: 0;   
     scroll-behavior: smooth;
+    /*zoom: 140%;*/
 }
 
 /*navbar*/
@@ -20,170 +21,60 @@ body {
 }
 
 
-/*primer contenedor */
+/* primer contenedor*/
 
-
-/*.conf2 {
-    width: 100%; 
-	height: 800px;
+.contenedor-tarjetas {
     display: flex;
-    flex-direction: column;    
-    background-image: url(imagenes/ba1.jpg);
-    background-size: 100% 100%;
-    background-color: #2D2C2B;
-    background-blend-mode: soft-light;
-    color: white;
-    justify-content: center;  
-    align-items: flex-end ;   
-        
-}
-
-#tickets {
-    background-color: rgb(17, 70, 45);
-    border-radius: 2px;
-}
-.btn {
-    color: white;
-    border: 1px solid white;
-}
-
-button .btn .btn-succes {
-    background-color: green;
-}
-
-
-
-.container_texto {
-    width: 35%;
-    margin-right: 100px;
-}
-
-h2 {
-    margin-right: 100px;     
-}
-
-#span {
-    margin-right: 100px;
-}*/
-
-/* segundo contenedor*/
-
-.tarjetas {
-    margin: 25px;
+    justify-content: center;
+    margin: 25px 0px 5px 0px;
 }
 
 .card-body {
-    border: 0.5px solid red;
+    margin: 2px;
+    padding: 20px;
     width: fit-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
+    height: auto;
 }
 
-.contenedor-tarjetas {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 25px;
+#card1 {
+    border: 0.5px solid darkcyan;
+}
+#card2 {
+    border: 0.5px solid cyan;
+}#card3 {
+    border: 0.5px solid chartreuse;
 }
 
-.oradores {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#cardTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.oradores h1 {
-    margin:0 0 10 0;
-    font-size: 25px;
+#cardText {
+    font-size: 16px;
 }
 
-.oradores h6 {
-    margin-top: 10px;
-    font-size: 12px;
+#discount {
+    font-weight: bold;
 }
 
-.oradores span {
-    margin-top: 10px;
-    font-size: 12px;
-}
-
-p.card-text {
-    font-size: 11px;
-}
-
-h5.card-title {
-    margin: 0px 0px 14px;
-    font-size: 18px;
-}
-
-a.btn.btn-danger {
-    padding: 0px;
-    font-size: 11px;
-    font-weight: bolder;
-}
-
-a.btn.btn-secondary {
-    padding: 0px;
-    font-size: 11px;
-    font-weight: bolder;
-}
-a.btn.btn-info {
-    padding: 0px;
-    font-size: 11px;
-    font-weight: bolder;
-}
-a.btn.btn-warning {
-    padding: 1px;
-    font-size: 11px;
-    font-weight: bolder;
-    color: black;
+#presentarDocu {
+    font-size: 13px;
+    opacity: 0.7;
+    margin: 0;
 }
 
 
-
-/*tercer contenedor*/
-
-.contenedor-flex {
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.confBsAs {
-    background-color: #2D2C2B;
-    color: white;       
-}
-
-p.texto {
-    padding-left: 20px;
-}
-
-.confBsAs h2 {
-    padding: 15px 0px 0px 20px;
-}
-
-.confBsAs button {
-    margin-left: 18px;
-    border: 1px solid white;
-}
-
-/*cuarto contenedor*/
-
-.contenedor-4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-}
+/* segundo contenedor */
 
 form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-        gap: 10px;
+    gap: 10px;
 }
 
 .oradores h6 {

@@ -29,62 +29,58 @@
     </nav>
   </header>
     <main>
-      <section class="tarjetas" id="oradores">
+      <section>
         <div class="contenedor-tarjetas" >          
           <div class="card">            
-            <div class="card-body">              
-              <h5 class="card-title">Estudiante</h5>
-              <p class="card-text">Tienen un descuento</p>
-              <p>80%</p>
-              <p>*presentar documentacion</p>
+            <div class="card-body" id="card1">              
+              <h5 class="card-title" id="cardTitle">Estudiante</h5>
+              <p class="card-text" id="cardText">Tienen un descuento</p>
+              <p id="discount">80%</p>
+              <p id="presentarDocu">*presentar documentacion</p>
             </div>
           </div>
           <div class="card" >            
-            <div class="card-body">              
-              <h5 class="card-title">Trainee</h5>
-              <p class="card-text">Tienen un descuento</p>
-              <p>50%</p>
-              <p>*presentar documentacion</p>
+            <div class="card-body" id="card2">              
+              <h5 class="card-title" id="cardTitle">Trainee</h5>
+              <p class="card-text" id="cardText">Tienen un descuento</p>
+              <p id="discount">50%</p>
+              <p id="presentarDocu">*presentar documentacion</p>
             </div>
           </div>
           <div class="card">
-            <div class="card-body">              
-              <h5 class="card-title">Junior</h5>
-              <p class="card-text">Tienen un descuento</p>
-              <p>15%</p>
-              <p>*presentar documentacion</p>
+            <div class="card-body" id="card3">              
+              <h5 class="card-title" id="cardTitle">Junior</h5>
+              <p class="card-text" id="cardText">Tienen un descuento</p>
+              <p id="discount">15%</p>
+              <p id="presentarDocu">*presentar documentacion</p>
             </div>
           </div>
         </div>
       </section>      
-      <section class="contenedor-4" id="conviertete">
-        <div class="oradores" id="conviertete1">
-          <h6>CONVIÉRTETE EN UN</h6>
-          <h1>ORADORES</h1>
-          <span>Anótate como orador para dar una <span id="span2">charla ignite</span>. Cuéntanos de que quieres hablar!</span>
+      <section>
+        <div class="contenedor-venta">    
+            <form>
+              <h6>VENTA</h6>
+              <h2>VALOR DE TICKET $200</h2>
+              <span>
+                <label for="nombre"></label>  
+                <input name="nombre" id="nombre" required 
+                  type="text"                              
+                  placeholder="Nombre">
+                <label for="apellido"></label>
+                <input name="apellido" 
+                  id="apellido" required 
+                  type="text"                              
+                  placeholder="Apellido">
+                </span>
+              <textarea name="textarea" 
+              id="" 
+              cols="75" rows="3"
+              placeholder="Sobre que quieres hablar?"></textarea>  
+              <span id="span1">Recuerda incluir un titulo para tu charla</span>
+              <button class="btn-enviar">Enviar</button>
+            </form>          
         </div>
-        <div>
-          <form action="" method="">
-            <span>
-              <label for="nombre"></label>  
-              <input name="nombre" id="nombre" required 
-                type="text"                              
-                placeholder="Nombre">
-              <label for="apellido"></label>
-              <input name="apellido" 
-                id="apellido" required 
-                type="text"                              
-                placeholder="Apellido">
-              </span>
-            <textarea name="textarea" 
-            id="" 
-            cols="75" rows="3"
-            placeholder="Sobre que quieres hablar?"></textarea>  
-            <span id="span1">Recuerda incluir un titulo para tu charla</span>
-            <button class="btn-enviar">Enviar</button>
-          </form>
-        </div>
-        
       </section>
     </main>
     <footer>      
