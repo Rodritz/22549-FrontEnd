@@ -31,7 +31,7 @@ body {
 	height: 800px;
     display: flex;
     flex-direction: column;    
-    background-image: url(imagenes/ba1.jpg);
+    background-image: url(../imagenes/ba1.jpg);
     background-size: 100% 100%;
     background-color: #2D2C2B;
     background-blend-mode: soft-light;
