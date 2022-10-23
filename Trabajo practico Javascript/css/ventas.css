@@ -1,12 +1,11 @@
 body { 
     margin: 0;
     scroll-behavior: smooth;
-    /*zoom: 140%;*/
+    zoom: 120%;
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
 }
-
 
 /*navbar*/
 .navbar {
@@ -100,8 +99,11 @@ h6 {
 #aPagar::-webkit-input-placeholder {
     color: rgb(26, 93, 170);
 }    
+#aPagar {
+    color: rgb(26, 93, 170);
+}
 
-.btn-enviar {
+.btn-borrar {
     background-color: rgb(150,201,62);
     color: white;
     width: 292px;
@@ -132,11 +134,27 @@ h6 {
     justify-content: space-evenly;
     background-color: rgb(36, 67, 85);
     
+    
 }
 
 .contenedor-footer a {
     text-decoration: none;
     color: white;
-    width: min-content;
+    width: min-content;    
 }
 
+@media screen and (max-width: 1200px) {
+    body {
+        zoom: 110%;
+    } 
+}
+@media screen and (max-width: 992px) {
+    body {
+        zoom: 100%;
+    } 
+}
+@media screen and (max-width: 768px) {
+    body {
+        zoom: 80%;
+    } 
+}
