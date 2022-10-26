@@ -36,8 +36,7 @@ function resumen(){
 
 }
 function validarDatos(nombre,apellido,email,cant) {
-    //aca solo aplico validaciones
-    if(Number(cant) && String(nombre) && String(apellido) && String(email)) { //en lugar de number puedo utilizar parseInt
+    if(Number(cant) && String(nombre) && String(apellido) && String(email)) {  
         return true;
     }
     return false;
