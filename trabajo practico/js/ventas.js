@@ -12,7 +12,17 @@ function borrar(){
 
 function resumen(){
     const entrada = 200;
+    let nombre = document.getElementById('nombre').value;
+    let apellido = document.getElementById('apellido').value;
+    let email = document.getElementById('email').value;
     let cant = document.getElementById('cantidad').value;
+
+    const datosValidos = validarDatos(nombre,apellido,email,cant);
+
+    if(!datosValidos) { 
+        alert('Verifique los datos ingresados');
+        return;
+    }
     
     let totalEntradas = entrada * cant;
 
@@ -24,6 +34,13 @@ function resumen(){
     //let pagoTotal = totalEntradas - descuento;
     document.getElementById('aPagar').value = 'Total a pagar $' + saldo;
 
+}
+function validarDatos(nombre,apellido,email,cant) {
+    //aca solo aplico validaciones
+    if(Number(cant) && String(nombre) && String(apellido) && String(email)) { //en lugar de number puedo utilizar parseInt
+        return true;
+    }
+    return false;
 }
 
 function Porcentaje(){

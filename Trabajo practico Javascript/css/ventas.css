@@ -1,7 +1,7 @@
 body { 
     margin: 0;
     scroll-behavior: smooth;
-    zoom: 120%;
+    zoom: 100%;
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;

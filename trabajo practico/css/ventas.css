@@ -1,7 +1,7 @@
 body { 
     margin: 0;
     scroll-behavior: smooth;
-    zoom: 120%;
+    zoom: 100%;
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
@@ -145,7 +145,7 @@ h6 {
 
 /*responsive*/
 
-@media screen and (max-width: 1200px) {
+/*@media screen and (max-width: 1200px) {
     body {
         zoom: 110%;
     } 
@@ -155,7 +155,7 @@ h6 {
         zoom: 100%;
     } 
 }
-/*@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
         zoom: 100%;
     } 
