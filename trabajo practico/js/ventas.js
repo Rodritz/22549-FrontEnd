@@ -17,13 +17,20 @@ function resumen(){
     let email = document.getElementById('email').value;
     let cant = document.getElementById('cantidad').value;
 
-    const datosValidos = validarDatos(nombre,apellido,email,cant);
+    const datosValidos = validarDatos(nombre,apellido,cant);
 
     if(!datosValidos) { 
-        alert('Verifique los datos ingresados');
+        alert('todos los campos son obligatorios');
         return;
     }
     
+    ///validacion de email///
+    expresion = /\w+@\w+\.+[a-z]/;
+    if(!expresion.test(email)){
+        alert('correo no es valido')
+    }
+    
+
     let totalEntradas = entrada * cant;
 
     let porcentaje = Porcentaje();
@@ -35,8 +42,8 @@ function resumen(){
     document.getElementById('aPagar').value = 'Total a pagar $' + saldo;
 
 }
-function validarDatos(nombre,apellido,email,cant) {
-    if(Number(cant) && String(nombre) && String(apellido) && String(email)) {  
+function validarDatos(nombre,apellido,cant) {
+    if(Number(cant) && String(nombre) && String(apellido)) {  
         return true;
     }
     return false;
@@ -61,4 +68,3 @@ function descuento(totalEntradas, porcentaje){
     return Math.abs(totalEntradas * porcentaje / 100 - totalEntradas)
     //return totalEntradas - (totalEntradas * porcentaje / 100)
 }
-
