@@ -1,7 +1,6 @@
 body { 
     margin: 0;
     scroll-behavior: smooth;
-    zoom: 100%;
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
@@ -29,8 +28,10 @@ body {
 
 .contenedor-tarjetas {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 25px 0px 5px 0px;
+    gap: 5px;
 }
 
 .card-body {      
@@ -76,14 +77,12 @@ body {
 /* segundo contenedor */
 
 form {
-    /*width: 100%;*/
     max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
     align-items: center;
-    gap: 10px;
+    gap: 10px;    
 }
 
 .col {
@@ -103,16 +102,12 @@ h6 {
     color: rgb(26, 93, 170);
 }
 
-.btn-borrar {
-    background-color: rgb(150,201,62);
-    color: white;
-    width: 292px;
-    border: none;
-    border-radius: 4px;
-    margin: 15px 5px 15px 0px;
-    padding: 8px;
-}
-.btn-resumen {
+.row-btn    {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}   
+.btn {
     background-color: rgb(150,201,62);
     color: white;
     width: 292px;
@@ -132,9 +127,7 @@ h6 {
     align-items: center;    
     display: inline-flex;
     justify-content: space-evenly;
-    background-color: rgb(36, 67, 85);
-    
-    
+    background-color: rgb(36, 67, 85);      
 }
 
 .contenedor-footer a {
@@ -146,7 +139,12 @@ h6 {
 /*responsive*/
 
 @media screen and (max-width: 620px) {
-    body {
+    .contenedor-footer {
         zoom: 80%;
     } 
+
+    form {       
+        margin-left: 10px;            
+    }
 }
+
