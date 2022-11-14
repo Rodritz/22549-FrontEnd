@@ -3,9 +3,10 @@ body {
 }
 
 .tarjetas {
-    display: flex;
-    height: 380px;
-    
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
 }    
 
 img.card-img-top {
